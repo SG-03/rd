@@ -6,9 +6,13 @@ function App() {
     useEffect(() => {
         setMessage('hello')
     })
+    useEffect(() => {
+        window.addEventListener('click', () => console.log('click'))
+    })
     const names = ['Simon', 'Jace', 'Clary']
     return (
         <div className='App'>
+            {message}
             {names.map((name, index) => (
                 <p key={index}>{name}</p>
             ))}
