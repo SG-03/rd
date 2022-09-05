@@ -6,6 +6,9 @@ function App() {
     useEffect(() => {
         setMessage('hello')
     })
+    useEffect(() => {
+        setMessage('welcome')
+    })
     return <div className='App'>{message}</div>
 }
 
